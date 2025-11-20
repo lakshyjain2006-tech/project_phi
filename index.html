@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Precisionist - Exact Image Descriptions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Precisionist</h1>
+    <p class="subtitle">
+        Speak "capture" to take a photo, or use the buttons to choose a file.<br>
+        Language will be detected automatically, and description will be read aloud.<br>
+        Say "stop describing" to stop speech.
+    </p>
+    <div class="upload-section">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <img id="preview" style="display:none;" />
+        <input type="file" id="imageFile" accept="image/*" style="display:none;" />
+        <input type="file" id="audioFile" accept="audio/*" style="display:none;" />
+        <button id="fileBtn" class="btn">📁 Choose Image File</button>
+        <button id="describeBtn" class="btn" style="display:none;">📝 Describe</button>
+        <button id="stopBtn" class="btn" style="display:none;">🛑 Stop</button>
+    </div>
+    <div class="voice-section">
+        <button id="startBtn" class="btn">🎤 Start Hands-Free Mode</button>
+    </div>
+    <div id="output" class="card"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
