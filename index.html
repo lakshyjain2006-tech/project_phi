@@ -29,6 +29,13 @@
     <div id="output" class="card"></div>
 </div>
 <script src="script.js"></script>
+<script>
+window.addEventListener('load', () => {
+    const welcomeMsg = new SpeechSynthesisUtterance("Welcome to Precisionist");
+    welcomeMsg.rate = 0.8;
+    speechSynthesis.speak(welcomeMsg);
+});
+</script>
 </body>
 </html>
 
